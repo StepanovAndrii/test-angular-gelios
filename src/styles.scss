@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+}
+
+html, body {
+    overflow: auto;
+    width: 100vw; 
+    height: 100%;
+}
+
+body {
+    font-family: "M PLUS Rounded 1c", serif;
+}

@@ -1,0 +1,28 @@
+<header>
+    <h1 class="logotype">
+        <a class="logotype-link" [routerLink]="'/home'" routerLinkActive="active-navigation-link" (click)="scrollToTop()">Gelios cat</a>
+    </h1>
+    <button class="burger-button">
+      <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 18L20 18" stroke-width="2" stroke-linecap="round" class="burger-line"/>
+        <path d="M4 12L20 12" stroke-width="2" stroke-linecap="round" class="burger-line"/>
+        <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round" class="burger-line"/>
+      </svg>
+    </button>
+    <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-link" [routerLink]="'/home'" routerLinkActive="active-navigation-link" (click)="scrollToTop()">Головна</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" [routerLink]="'/about'" routerLinkActive="active-navigation-link" (click)="scrollToTop()">Про нас</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" [routerLink]="'/volontery'" routerLinkActive="active-navigation-link" (click)="scrollToTop()">Волонтерам</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" (click)="scrollTo('footer', 'end')">Контакти</a>
+          </li>
+        </ul>
+    </nav>
+</header>
